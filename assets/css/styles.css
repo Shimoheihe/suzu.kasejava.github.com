@@ -271,13 +271,6 @@ footer {
     background: url(images/city.png) no-repeat 50% 100%;
     min-height: 50vh;
   }
-  footer .buttons {
-    padding: 0px 0 190px 0;
-    text-align: center;
-  }
-  footer .buttons .button {
-    margin: 10px;
-  }
   footer .signature {
     position: absolute;
     bottom: 30px;
@@ -603,4 +596,13 @@ pre.line-numbers > code {
     background-size: 240px 315px;
   }
 
+}
+
+svg {
+  overflow: visible;
+}
+.sidebar {
+  z-index: 1;
+  position: absolute;
+  top: 0;
 }

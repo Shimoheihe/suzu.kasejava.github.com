@@ -462,13 +462,13 @@ pre.line-numbers > code {
   nav.fixed {
     height: 250px;
   }
-    .logo-holder {
-      padding-top: 247px;
-    }
-    
   .logo-holder {
+      padding-top: 247px;
+      height: 56.25px;
+    }
+/*  .logo-holder {
     height: 56.25px;
-  }
+  }*/
   .logo {
     width: 600px;
     height: 112.5px;
@@ -555,8 +555,6 @@ pre.line-numbers > code {
     background-image: url(images/city-mobile.png);
   }
 }
-
-
 @media(max-width: 480px) {
   .top-links .button-github {
     display: none;
@@ -584,25 +582,6 @@ pre.line-numbers > code {
 
 }
 
-@media(max-width: 320px) {
-
-  .logo-holder {
-    height: 22.5px;
-  }
-  .logo {
-    width: 240px;
-    height: 45px;
-    margin-top: -22.5px;
-    background-size: 240px 315px;
-  }
 
 }
 
-svg {
-  overflow: visible;
-}
-.sidebar {
-  z-index: 1;
-  position: absolute;
-  top: 0;
-}

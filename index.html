@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8" />
 
   <title>Blue Curriculum Java</title>
-
-  <meta name="description" content="Midnight.js is a jQuery plugin that lets you sublty change your headers to make them match the content as you scroll." />
+  <meta http-equiv="content-language" content="ja">
+  <meta name="description" content="energy.js is a jQuery plugin that lets you sublty change your headers to make them match the content as you scroll."
+  />
   <meta name="keywords" content="js, jquery, scroll, plugin, animation" />
   <meta name="robots" content="INDEX, FOLLOW" />
   <meta name="author" content="Aerolab" />
@@ -23,23 +25,12 @@
   <link rel="stylesheet" href="assets/css/animate.css" />
   <link rel="stylesheet" href="assets/css/styles.css" />
 
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-21195039-3', 'aerolab.github.io');
-    ga('require', 'displayfeatures');
-    ga('require', 'linkid', 'linkid.js');
-    ga('send', 'pageview');
-  </script>
-
 </head>
+
 <body oncontextmenu="return false">
 
   <nav class="fixed">
-    <div class="midnightHeader default">
+    <div class="kaseiiki default">
       <div class="logo-holder">
         <a class="logo"><span class="screenreader"></span></a>
       </div>
@@ -47,21 +38,25 @@
   </nav>
 
 
-  <div class="top-links" data-midnight="white">
+  <div class="top-links" data-energy="white">
     <a class="button" href="http://blue-corporation.jp/">Curriculum</a>
     <a class="button button-github" href="http://blue-corporation.jp/" target="_blank">HOME</a>
   </div>
 
 
-  <div class="first-background" data-midnight="white">
+  <div class="first-background" data-energy="white">
     <!-- Hi! -->
   </div>
 
 
-  <header data-midnight="black">
+  <header data-energy="black">
 
     <div class="container">
-
+      <p class="tissot"><strong>ようこそ訓練サイトへ！</strong></p>
+      <p class="tissot">こちら基礎レベル１での訓練になります。</p>
+      <p class="tissot">実際にご自分のエディターでJavaを書き、コンパイルして見てください。</p>
+      <p class="tissot">わからないときは近くのJava担当に聞いて見てくださいね♪</p>
+      <p class="tissot"></p>
       <h1 class="wow fadeInUp">Welcome to JavaWorld.</h1>
       <p class="wow fadeInUp">Scroll to try it out!</p>
       <div class="scroll-prompt wow fadeInUp"></div>
@@ -73,7 +68,7 @@
   </header>
 
 
-  <section class="step step-one" data-midnight="blue">
+  <section class="step step-one" data-energy="blue">
 
     <div class="container">
       <div class="instructions wow fadeInLeft">
@@ -87,16 +82,13 @@
         <p>必須条件 3 :使用するファイル数は<em>最大2つまで</em>とすること。</p>
       </div>
 
-      <pre class="line-numbers wow fadeInRight"><code class="language-markup">&lt;!-- Your Fixed Nav --&gt;
-&lt;if 〜　　&gt;
-  &lt;a class="logo"&gt;Logo&lt;/a&gt;
-&lt;/nav&gt;</code></pre>
+      <pre class="line-numbers wow fadeInRight"><code></code></pre>
     </div>
 
   </section>
 
 
-  <section class="step step-two" data-midnight="light">
+  <section class="step step-two" data-energy="light">
 
     <div class="container">
       <div class="instructions wow fadeInLeft">
@@ -106,40 +98,30 @@
         <p>4. 引数の値が20以下の場合、「未成年です。」引数が20以上場合、「大人です。」と出力せよ。</p>
       </div>
 
-      <pre class="line-numbers wow fadeInRight"><code class="language-markup">&lt;section data-midnight="white"&gt;
-  &lt;h1&gt;Use a white nav here&lt;/h1&gt;
-&lt;/section&gt;
-
-&lt;div data-midnight="blue"&gt;
-  &lt;h1&gt;And a blue nav here&lt;/h1&gt;
-&lt;/div&gt;
-
-&lt;footer&gt;
-  &lt;h1&gt;This will just use the default header&lt;/h1&gt;
-&lt;/footer&gt;</code></pre>
+      <pre class="line-numbers wow fadeInRight"><code></code></pre>
     </div>
 
   </section>
 
 
-  <section class="step step-three" data-midnight="dark">
+  <section class="step step-three" data-energy="dark">
 
     <div class="container">
       <div class="instructions wow fadeInLeft">
         <h2>Styling your headers</h2>
-        <p>You can style it in your css using the class <em>.midnightHeader.your-class</em>.</p>
+        <p>You can style it in your css using the class <em>.kaseiiki.your-class</em>.</p>
         <p>Use whatever CSS or markup you like for each one. They will be switched automatically when necessary.</p>
       </div>
 
-      <pre class="line-numbers wow fadeInRight"><code class="language-css">.midnightHeader.default {
+      <pre class="line-numbers wow fadeInRight"><code class="language-css">.kaseiiki.default {
   background: none;
   color: black;
 }
-.midnightHeader.white {
+.kaseiiki.white {
   background: white;
   color: black;
 }
-.midnightHeader.blue {
+.kaseiiki.blue {
   background: blue;
   color: white;
 }</code></pre>
@@ -149,85 +131,103 @@
 
 
 
-  <section class="step step-four" data-midnight="lighter">
+  <section class="step step-four" data-energy="lighter">
 
     <div class="container">
       <div class="instructions wow fadeInLeft">
         <h2>The jQuery Plugin</h2>
-        <p>To make everything work, just load midnight (and jQuery) and initialize it. We take care of the rest.</p>
+        <p>To make everything work, just load energy (and jQuery) and initialize it. We take care of the rest.</p>
       </div>
 
-      <pre class="line-numbers wow fadeInRight"><code class="language-markup">&lt;script src="Golden Harvest.js"&gt;&lt;/script&gt;
-&lt;script&gt;
-// Start midnight
-$(document).ready(function(){
-  // Change this to the correct selector.
-  $('nav.fixed').midnight();
-});
-&lt;/script&gt;</code></pre>
+      <pre class="line-numbers wow fadeInRight"><code></code></pre>
     </div>
 
   </section>
 
 
-  <section class="step step-five full-height" data-midnight="white">
+  <section class="step step-five full-height" data-energy="white">
 
     <div class="container">
 
       <div class="instructions wow fadeInLeft">
         <h2>Further customization</h2>
         <p>Want to use custom markup for each header?</p>
-        <p>You just need to add a div with the class <em>.midnightHeader.default</em> inside your header, as well as any other custom headers you want.</p>
-        <p>For instance the "butterflies" section will use the .midnightHeader.butterflies header, and any other ones will just use the markup from .midnightHeader.default.</p>
+        <p>You just need to add a div with the class <em>.kaseiiki.default</em> inside your header, as well as any other custom
+          headers you want.</p>
+        <p>For instance the "butterflies" section will use the .kaseiiki.butterflies header, and any other ones will just use
+          the markup from .kaseiiki.default.</p>
       </div>
 
 
-      <pre class="line-numbers wow fadeInRight"><code class="language-markup">&lt;nav class="fixed"&gt;
-  &lt;!-- Your standard header --&gt;
-  &lt;div class="midnightHeader default"&gt;
-    &lt;a class="logo"&gt;Logo&lt;/a&gt;
-  &lt;/div&gt;
-
-  &lt;!-- A header with butterflies --&gt;
-  &lt;div class="midnightHeader butterflies"&gt;
-    &lt;a class="logo"&gt;Logo&lt;/a&gt;
-    &lt;span class="a-butterfly"&gt;&lt;/span&gt;
-    &lt;span class="another-butterfly"&gt;&lt;/span&gt;
-  &lt;/div&gt;
-&lt;/nav&gt;</code></pre>
+      <pre class="line-numbers wow fadeInRight"><code></code></pre>
 
     </div>
 
   </section>
 
 
+  <input type="button" value="Press the button" onclick="location.reload();" />
+  <footer class="footer" data-energy="full">
+    <!--<div class="illustration-city">
+    </div>-->
+    <div class="star-wars-intro">
 
-  <footer class="footer" data-midnight="full">
-    <div class ="foo"></div>
-    <div class="illustration-city"></div>
+      <!-- Blue Intro Text -->
+      <p class="intro-text">
+        Now Loading.....
+      </p>
+
+      <!-- Logo Image or Text goes in here -->
+      <h2 class="main-logo">
+        <img src="assets/css/images/sw.png">
+      </h2>
+
+      <!-- All Scrolling Content Goes in here -->
+      <div class="main-content">
+
+        <div class="title-content">
+          <br>
+          <p>Welcome to the Java Curriculum.</p>
+          <p>We are delighted you are joining</p>
+          <p>us.Your role is critical in us.Your</p>
+          <p>fulfilling the mission of IT </p>
+          <p>industry and Blue.The colleague</p>
+          <p>is here to support your technical</p>
+          <p>capabilities,so if you need any</p>
+          <p>assistance, please feel free to </p>
+          <p>ask any of us. We all look</p>
+          <p>forward to working with you.</p>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <a href="#welcome" class="space-button">次に行く</a>
+        </div>
+      </div>
+    </div>
   </footer>
 
 
-  <script src="assets/js/jquery-1.11.1.min.js"></script>
+  <script src="assets/js/dontcometyo.js"></script>
   <script src="assets/js/sscr.min.js"></script>
   <script src="assets/js/prism.js"></script>
   <script src="assets/js/wow.min.js"></script>
-  <script src="assets/js/viewport-units-buggyfill.js"></script>
+  <script src="assets/js/casio.js"></script>
+  <script src="assets/js/type.js"></script>
   <script src="Golden Harvest.js"></script>
+  <script src="assets/js/ws.js"></script>
   <script>
-
-
-
-    $(document).ready(function(){
+    $(document).ready(function () {
       // vh fix for iOS7 (Not that it works well on that anyway)
       viewportUnitsBuggyfill.init();
 
-      $(window).resize(function(){
+      $(window).resize(function () {
         viewportUnitsBuggyfill.refresh();
       });
 
-      // Start Midnight!
-      $('nav.fixed').midnight();
+      // Start energy!
+      $('nav.fixed').energy();
 
       // Start wow.js
       new WOW().init();
@@ -237,28 +237,28 @@ $(document).ready(function(){
       var islandTop = $island.offset().top;
       var windowHeight = $(window).height();
 
-      $(window).resize(function(){
+      $(window).resize(function () {
         islandTop = $island.offset().top;
         windowHeight = $(window).height();
       });
 
-      $(document).scroll(function(){
+      $(document).scroll(function () {
         var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
         var minScrollTop = islandTop - windowHeight * 0.4;
         var maxScrollTop = islandTop;
 
         // Opacity goes from 1.0 at the bottom 2/3 of the screen to 0.4 at the top
-        if( scrollTop <= islandTop*2 ) {
+        if (scrollTop <= islandTop * 2) {
           var targetOpacity = 1.0;
           var minOpacity = 0.4;
 
-          if( scrollTop > minScrollTop && scrollTop < maxScrollTop ) {
+          if (scrollTop > minScrollTop && scrollTop < maxScrollTop) {
             targetOpacity = ((maxScrollTop - scrollTop) / (maxScrollTop - minScrollTop)) * (1.0 - minOpacity) + minOpacity;
           }
-          else if( scrollTop > maxScrollTop ) {
+          else if (scrollTop > maxScrollTop) {
             targetOpacity = minOpacity;
           }
-          else if( scrollTop < minScrollTop ) {
+          else if (scrollTop < minScrollTop) {
             targetOpacity = 1.0;
           }
 
@@ -267,7 +267,7 @@ $(document).ready(function(){
 
       });
 
-      $('.scroll-prompt').click(function(event){
+      $('.scroll-prompt').click(function (event) {
         event.preventDefault();
         $('html, body').animate({
           scrollTop: $("section.step-one").offset().top - $('nav').height() * 0.5
@@ -280,4 +280,5 @@ $(document).ready(function(){
   </script>
 
 </body>
+
 </html>

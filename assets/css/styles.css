@@ -616,3 +616,67 @@ pre.line-numbers > code {
     animation: scroll 100s linear 4s forwards;
   }
 }
+.reload{
+  position: relative;
+  width: 33px;
+  height: 33px;
+  border: 10px solid;
+  border-right-color: transparent;
+  border-radius: 100%;
+  box-sizing: border-box;
+}
+
+.reload:before{
+  position: absolute;
+  top: 10px;
+  content: "";
+  border: 17px solid transparent;
+  border-top: 19px solid;
+  background: transparent;
+  transform-origin: left top;
+  transform: rotate(-40deg);
+  box-sizing: border-box;
+}
+
+.blue{
+  color: blue;
+}
+
+
+/*.door {
+  -webkit-transition: top 400ms, box-shadow 200ms, -webkit-transform 300ms;
+  -moz-transition: top 400ms, box-shadow 200ms, -moz-transform 300ms;
+  -ms-transition: top 400ms, box-shadow 200ms, -ms-transform 300ms;
+  -o-transition: top 400ms, box-shadow 200ms, -o-transform 300ms;
+  transition: top 400ms, box-shadow 200ms, transform 300ms;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -ms-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  background-color: #fff;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  z-index: 2;
+  height: 50%;
+}
+.door:before {
+  font-family: 'tweet', sans-serif;
+  position: absolute;
+  margin-left: -20px;
+  font-size: 35px;
+  display: block;
+  color: #4099FF;
+  content: "\e000";
+  width: 0px;
+  height: 20px;
+  left: 52%;
+}
+
+@font-face {
+  font-family: 'tweet';
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/277/tweet.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}*/
